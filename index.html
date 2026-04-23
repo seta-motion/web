@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>SETA Motion</title>
-  <meta name="description" content="SETA Motion is a stop motion workflow for Blender with camera and mobile capture support." />
+  <title>Seta Motion</title>
+  <meta name="description" content="Seta Motion is a stop motion workflow for Blender with camera and mobile capture support." />
   <style>
     :root {
       --bg: #0f1115;
@@ -200,6 +200,13 @@
       box-shadow: var(--shadow);
     }
 
+    .hero-card img {
+      display: block;
+      width: 100%;
+      height: auto;
+      border-radius: 20px;
+    }
+
     .preview-window {
       background: #0a0c10;
       border: 1px solid rgba(255,255,255,0.08);
@@ -390,7 +397,7 @@
 
     .split {
       display: grid;
-      grid-template-columns: 1fr 1fr;
+      grid-template-columns: 1fr;
       gap: 18px;
     }
 
@@ -477,18 +484,15 @@
 <body>
   <header class="nav">
     <div class="container nav-inner">
-      <a href="#top" class="brand" aria-label="SETA Motion home">
+      <a href="#top" class="brand" aria-label="Seta Motion home">
         <span class="brand-mark">
-          <img src="assets/logo.png" alt="SETA Motion logo" />
+          <img src="assets/logo.png" alt="Seta Motion logo" />
         </span>
-        <span>SETA Motion</span>
+        <span>Seta Motion</span>
       </a>
 
       <nav class="nav-links" aria-label="Primary navigation">
         <a href="#features">Features</a>
-        <a href="#status">Status</a>
-        <a href="#roadmap">Roadmap</a>
-        <a href="#download">Download</a>
       </nav>
     </div>
   </header>
@@ -497,45 +501,18 @@
     <section class="hero">
       <div class="container hero-grid">
         <div>
-          <div class="eyebrow">seta</d
-          <h1>Seamlessly integrate stop motion production into the Blender pipeline..</h1>
+          <div class="eyebrow">Blender stop motion workflow</div>
+          <h1>Capture, preview, and animate with a cleaner stop motion pipeline.</h1>
           <p class="lead">
-            SETA Motion is a stop motion workflow built around Blender, with support for camera-driven capture and a mobile backend for flexible shooting setups.
+            Seta Motion is a stop motion workflow built around Blender, with support for DSLR Cameras and  Mobile devices for flexible shooting setups.
           </p>
-          <div class="hero-actions">
-            <a class="button button-primary" id="download" href="https://github.com/seta-motion/web" target="_blank" rel="noreferrer">View on GitHub</a>
-            <a class="button button-secondary" href="#features">See features</a>
-          </div>
-          <div class="hero-note">
-            <span>Live preview</span>
-            <span>Camera drivers</span>
-            <span>Mobile backend</span>
-            <span>Blender integration</span>
+          <div class="hero-actions" id="download">
+            <a class="button button-primary" href="https://github.com/seta-motion/web" target="_blank" rel="noreferrer">Download Now!</a>
           </div>
         </div>
 
         <div class="hero-card">
-          <div class="preview-window" aria-hidden="true">
-            <div class="preview-topbar">
-              <span class="dot"></span>
-              <span class="dot"></span>
-              <span class="dot"></span>
-            </div>
-            <div class="preview-body">
-              <div class="mock-stage">
-                <div class="mock-overlay"></div>
-                <div class="mock-path"></div>
-                <div class="mock-subject"></div>
-                <div class="mock-ui">
-                  <strong>Session</strong>
-                  <span>Backend: Mobile HTTP</span>
-                  <span>Preview: MJPEG</span>
-                  <span>Capture: Ready</span>
-                  <span>Frame: 0012</span>
-                </div>
-              </div>
-            </div>
-          </div>
+          <img src="assets/seta_ui.png" alt="Seta Motion interface preview" />
         </div>
       </div>
     </section>
@@ -544,58 +521,23 @@
       <div class="container">
         <div class="section-head">
           <div>
-            <h2>What SETA Motion is trying to solve</h2>
+            <h2>Stop Motion for Everyone</h2>
           </div>
-          <p>
-            A practical stop motion workflow should not force you into one camera, one platform, or one fragile pipeline. SETA Motion is built to keep the capture layer flexible while staying close to Blender.
-          </p>
         </div>
 
         <div class="cards">
           <article class="card">
-            <h3>Blender-centered workflow</h3>
-            <p>Work from Blender instead of bouncing between disconnected tools and half-compatible capture apps.</p>
+            <h3>Capture-centered workflow</h3>
+            <p>Work from Blender in a unified workflow instead of switching between expensive, disconnected and fragmented applications.</p>
           </article>
           <article class="card">
             <h3>Camera and mobile support</h3>
-            <p>Use dedicated camera drivers where available, while also supporting a mobile backend for lighter setups.</p>
+            <p>Democratize Stop Motion animation with dedicated DSLR camera controllers and mobile device cameras.</p>
           </article>
           <article class="card">
             <h3>Built for real production needs</h3>
-            <p>Preview, capture, sequence handling, and future stop motion utilities are treated as workflow problems, not shiny gimmicks.</p>
+            <p>Preview, capture, and manage stop-motion sequences, and create new dedicated tools thanks to Blender's flexibility.</p>
           </article>
-        </div>
-      </div>
-    </section>
-
-    <section class="section" id="status">
-      <div class="container">
-        <div class="section-head">
-          <div>
-            <h2>Current project status</h2>
-          </div>
-          <p>
-            This block is written conservatively. Change it later as the project hardens, but do not pretend features are finished if they are still in testing.
-          </p>
-        </div>
-
-        <div class="status-grid">
-          <div class="status-box">
-            <div class="status-label">Addon core</div>
-            <div class="status-value">Working</div>
-          </div>
-          <div class="status-box">
-            <div class="status-label">Android app</div>
-            <div class="status-value">Available</div>
-          </div>
-          <div class="status-box">
-            <div class="status-label">Driver system</div>
-            <div class="status-value">Expanding</div>
-          </div>
-          <div class="status-box">
-            <div class="status-label">Pipeline scope</div>
-            <div class="status-value">In active development</div>
-          </div>
         </div>
       </div>
     </section>
@@ -603,7 +545,7 @@
     <section class="section">
       <div class="container split">
         <article class="card">
-          <h2>Core features</h2>
+          <h2>Seta Motion features</h2>
           <ul class="list">
             <li>
               <strong>Capture from Blender</strong>
@@ -623,41 +565,19 @@
             </li>
           </ul>
         </article>
-
-        <article class="card" id="roadmap">
-          <h2>Near-term roadmap</h2>
-          <ul class="list">
-            <li>
-              <strong>Stronger feature discovery</strong>
-              <span>Show only the controls that the active backend or driver actually supports.</span>
-            </li>
-            <li>
-              <strong>Driver expansion</strong>
-              <span>Broaden the supported command surface without wrecking the stable flows that already work.</span>
-            </li>
-            <li>
-              <strong>Preview overlays and onion tools</strong>
-              <span>Make previous captures more useful during shooting instead of treating them as a side note.</span>
-            </li>
-            <li>
-              <strong>Auxiliary stop motion tools</strong>
-              <span>Possibly as a separate addon, so SETA does not become a bloated mess.</span>
-            </li>
-          </ul>
-        </article>
       </div>
     </section>
 
     <section class="section">
       <div class="container">
         <div class="cta">
-          <h2>Use this as the first public landing page, not the final masterpiece.</h2>
+          <h2>About .</h2>
           <p>
-            The point right now is to get SETA Motion online with a clean identity, a solid project summary, and obvious links to the code and docs. Fancy comes later.
+            Seta Motion online  .
           </p>
           <div class="hero-actions" style="margin-bottom:0;">
-            <a class="button button-primary" href="https://github.com/seta-motion" target="_blank" rel="noreferrer">Project profile</a>
-            <a class="button button-secondary" href="https://github.com/seta-motion/web" target="_blank" rel="noreferrer">Website repo</a>
+            <a class="button button-secondary" href="https://lunopictures.com" target="_blank" rel="noreferrer">Luno Pictures</a>
+            <a class="button button-primary" href="https://github.com/infamedavid/seta_motion" target="_blank" rel="noreferrer">Download Seta</a>
           </div>
         </div>
       </div>
@@ -666,7 +586,7 @@
 
   <footer>
     <div class="container footer-inner">
-      <span>© 2026 SETA Motion</span>
+      <span>© 2026 Seta Motion</span>
       <span>Built for stop motion production inside Blender.</span>
     </div>
   </footer>
